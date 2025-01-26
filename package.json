@@ -1,0 +1,37 @@
+{
+  "name": "use-adblock-detect",
+  "author": "Md. Atiquzzaman Soikat",
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsup"
+  },
+  "dependencies": {
+    "vue": "^3.5.13"
+  },
+  "main": "dist/useAdBlockDetector.cjs",
+  "module": "dist/useAdBlockDetector.js",
+  "types": "dist/useAdBlockDetector.d.ts",
+  "exports": {
+    "import": "./dist/useAdBlockDetector.js",
+    "require": "./dist/useAdBlockDetector.cjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "vue",
+    "vite",
+    "adblock"
+  ],
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/tsconfig": "^0.7.0",
+    "tsup": "^8.3.6",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.5",
+    "vue-tsc": "^2.2.0"
+  }
+}
