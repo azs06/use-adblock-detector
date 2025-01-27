@@ -1,1 +1,3 @@
-export { useAdBlockDetector } from "./useAdBlockDetector.ts";
+import { useAdBlockDetector } from "./useAdBlockDetector.ts";
+
+export { useAdBlockDetector };
