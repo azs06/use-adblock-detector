@@ -1,5 +1,18 @@
-# Vue 3 + TypeScript + Vite
+### Vue hook to detect if ad blocker is enabled
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+```shell
+npm install use-adblock-detector
+```
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+```vue
+<script setup lang="ts">
+import { useAdBlockDetector } from "./useAdBlockDetector";
+const { isAdBlockEnabled } = useAdBlockDetector();
+</script>
+
+<template>
+  <div>
+    <h1 v-if="isAdBlockEnabled">AdBlock is enabled</h1>
+  </div>
+</template>
+```
