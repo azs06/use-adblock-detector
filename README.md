@@ -11,7 +11,8 @@ const { isAdBlockEnabled, isDetecting } = useAdBlockDetector();
 </script>
 
 <template>
-  <div>    <h1 v-if="isAdBlockEnabled">AdBlock is enabled</h1>
+  <div>
+  <h1 v-if="isAdBlockEnabled">AdBlock is enabled</h1>
   </div>
 </template>
 ```
